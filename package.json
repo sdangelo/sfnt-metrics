@@ -1,0 +1,29 @@
+{
+  "name": "sfnt-metrics",
+  "version": "0.0.0",
+  "description": "SFNT font metrics extractor",
+  "main": "sfnt-metrics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sdangelo/sfnt-metrics.git"
+  },
+  "keywords": [
+    "SFNT",
+    "TTF",
+    "OTF",
+    "TrueType",
+    "OpenType",
+    "font",
+    "glyph",
+    "metrics"
+  ],
+  "author": "Stefano D'Angelo <zanga.mail@gmail.com> (http://sdangelo.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdangelo/sfnt-metrics/issues",
+    "email": "zanga.mail@gmail.com"
+  }
+}
