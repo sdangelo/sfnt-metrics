@@ -85,8 +85,15 @@ module.exports = {
 			for (var i = 0; i < cmap.segments.length; i++) {
 				for (var j = cmap.segments[i].startCode;
 				     j <= cmap.segments[i].endCode; j++) {
-					var gid = (j + cmap.segments[i].idDelta)
-						  & 0xffff;
+					var gid;
+					if ("glyphIndexArrayFirst" in cmap.segments[i]) {
+						gid = cmap.glyphIndexArray[cmap.segments[i].glyphIndexArrayFirst + j - cmap.segments[i].startCode];
+						if (gid)
+							gid = (gid + cmap.segments[i].idDelta)
+						       	      & 0xffff;
+					} else
+						gid = (j + cmap.segments[i].idDelta)
+						       & 0xffff;
 					metrics.glyphs[k] = {
 						glyphId:	gid,
 						charCode:	j,

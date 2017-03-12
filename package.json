@@ -1,6 +1,6 @@
 {
   "name": "sfnt-metrics",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "SFNT font metrics extractor",
   "main": "sfnt-metrics.js",
   "scripts": {
